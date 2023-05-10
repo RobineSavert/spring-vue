@@ -1,0 +1,81 @@
+.tippy-box[data-theme~='basket'] {
+  @apply bg-basket;
+  background-image: radial-gradient(#fff 10%, transparent 11%), radial-gradient(#fff 10%, transparent 11%);
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
+  @apply bg-repeat;
+  @apply border-2;
+  @apply border-basket;
+  @apply p-6;
+  @apply rounded-xl;
+  @apply shadow-2xl;
+}
+
+.tippy-box[data-theme~='basket'] .tippy-content {
+  @apply p-3;
+  @apply text-berry;
+  @apply bg-white;
+  @apply rounded-lg;
+  @apply border-2;
+  @apply border-basket;
+}
+
+.tippy-box[data-theme~='basket'] .tippy-svg-arrow {
+  @apply fill-current;
+  @apply text-basket;
+}
+
+.tippy-box[data-theme~='berry'] {
+  @apply bg-berry;
+  background-image: radial-gradient(#fff 10%, transparent 11%), radial-gradient(#fff 10%, transparent 11%);
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
+  @apply bg-repeat;
+  @apply border-2;
+  @apply border-berry;
+  @apply p-6;
+  @apply rounded-xl;
+  @apply shadow-2xl;
+}
+
+.tippy-box[data-theme~='berry'] .tippy-content {
+  @apply p-3;
+  @apply text-berry;
+  @apply bg-white;
+  @apply rounded-lg;
+  @apply border-2;
+  @apply border-berry;
+}
+
+.tippy-box[data-theme~='berry'] .tippy-svg-arrow {
+  @apply fill-current;
+  @apply text-berry;
+}
+
+
+.tippy-box[data-theme~='night'] {
+  @apply bg-night;
+  background-image: radial-gradient(#fff 10%, transparent 11%), radial-gradient(#fff 10%, transparent 11%);
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
+  @apply bg-repeat;
+  @apply border-2;
+  @apply border-night;
+  @apply p-6;
+  @apply rounded-xl;
+  @apply shadow-2xl;
+}
+
+.tippy-box[data-theme~='night'] .tippy-content {
+  @apply p-3;
+  @apply text-night;
+  @apply bg-white;
+  @apply rounded-lg;
+  @apply border-2;
+  @apply border-night;
+}
+
+.tippy-box[data-theme~='night'] .tippy-svg-arrow {
+  @apply fill-current;
+  @apply text-night;
+}

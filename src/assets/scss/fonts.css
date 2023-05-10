@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+@layer base {
+    @font-face {
+        font-family: 'ut_sugar_caneregular';
+        font-weight: 400;
+        font-display: swap;
+        src: url(/src/assets/fonts/utsugarcane-regular-webfont.woff2);
+    }
+    @font-face {
+        font-display: swap;
+        font-family: 'ut_sugar_caneregular';
+        font-weight: 500;
+        src: url(/src/assets/fonts/utsugarcane-regular-webfont.woff);
+    }
+}
