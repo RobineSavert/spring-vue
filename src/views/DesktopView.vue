@@ -1,6 +1,5 @@
 <template>
-    <section class="hidden md:flex overflow-hidden relative w-full h-screen justify-center">
-        <Nav :is-desktop="true" />
+  <Nav :is-desktop="true" />
 
         <PlantView />
 
@@ -11,22 +10,18 @@
             <p class="font-quicksand text-xl text-white 3xl:text-4xl">Welcome to my world, click around & have a lovely time!</p>
         </div>
 
-        <div class="bg-[right_-8rem_bottom_0rem] lg:bg-[right_-12rem_bottom_-2rem] xl:bg-[right_-15rem_bottom_-3rem] bottom-0 right-0 w-[1000px] h-[1300px] lg:w-[900px] lg:h-[1000px] xl:w-[1100px] xl:h-[1200px] 2xl:w-[1500px] 2xl:h-[2400px] 3xl:w-[1566px] 3xl:h-[2400px] 4xl:w-[2000px] 4xl:h-[2400px]  bg-no-repeat bg-[url('/src/assets/img/blanky.svg')] absolute">
+        <div class="bg-[right_-8rem_bottom_0rem] lg:bg-[right_-12rem_bottom_-2rem] xl:bg-[right_-15rem_bottom_-3rem] bottom-0 right-0 w-[1000px] h-[1300px] lg:w-[900px] lg:h-[1000px] xl:w-[1100px] xl:h-[1200px] 2xl:w-[1260px] 2xl:h-[1890px] 3xl:w-[1566px] 3xl:h-[2400px] 4xl:w-[2000px] 4xl:h-[2400px]  bg-no-repeat bg-[url('/src/assets/img/blanky.svg')] absolute">
         </div>
-
-        <PopoverItems />
-
 
         <ItemView />
 
-        <Copyright :is-desktop="true" />
-    </section>
+        <PopoverItems />
 
-<Popovers  />
+        <Copyright :is-desktop="true" />
+
 
 </template>
 <script setup>
-import Popovers from "../components/Popovers.vue";
 import Nav from "../components/Nav.vue"
 import Copyright from "../components/Copyright.vue";
 import GrassView from "./GrassView.vue";

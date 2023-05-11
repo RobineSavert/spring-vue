@@ -1,7 +1,10 @@
 import { createApp } from 'vue'
 import './assets/scss/style.css'
-import tippy from 'tippy.js';
-import 'tippy.js/dist/tippy.css'; // optional for styling
+import router from './router/router'
+import 'tippy.js/dist/tippy.css';
 import App from './App.vue'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+
+app.use(router)
+app.mount('#app')

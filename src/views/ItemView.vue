@@ -1,7 +1,5 @@
 <template>
-
-    <Item
-            v-for="(bgImage, index) in items"
+    <Item v-for="(bgImage, index) in items"
             :key="index"
             :image="bgImage.image"
             :left="bgImage.left"
@@ -32,17 +30,20 @@
             :width="bgImage.width"
             :height="bgImage.height"
     />
-
-
 </template>
+
 <script setup>
 import Item from "../components/Item.vue";
+import flowerBouquet from "/src/assets/img/flower-bouquet.svg"
+import plate from "/src/assets/img/plate.svg"
+import sunglasses from "/src/assets/img/sunglasses.svg"
+import guitar from  "/src/assets/img/guitar.svg"
+import cheese from  "/src/assets/img/cheese.svg"
 import {computed} from "vue";
-
 
 const items = computed(() => [
     {
-        image: "/assets/img/flower-bouquet.svg",
+        image: flowerBouquet,
         bottom: "bottom-[-5%]",
         right: "right-[-5%]",
         width: "w-[200px]",
@@ -52,7 +53,7 @@ const items = computed(() => [
         lgWidth: "lg:w-[100px]",
     },
     {
-        image: "/assets/img/plate.svg",
+        image: plate,
         left: "left-[43%]",
         lgLeft: "lg:left-[41%]",
         xlLeft: "xl:left-[47%]",
@@ -63,7 +64,7 @@ const items = computed(() => [
         doubleXlWidth: "2xl:w-[350px]",
     },
     {
-        image: "/assets/img/sunglasses.svg",
+        image: sunglasses,
         right: "right-[35%]",
         bottom: "bottom-[12%]",
         lgRight: "lg:right-[25%]",
@@ -75,7 +76,7 @@ const items = computed(() => [
         doubleXlWidth: "2xl:w-[150px]",
     },
     {
-        image: "/assets/img/guitar.svg",
+        image: guitar,
         right: "right-[2%]",
         bottom: "bottom-[1%]",
         width: "w-[300px]",
@@ -84,7 +85,7 @@ const items = computed(() => [
         doubleXlWidth: "2xl:w-[500px]",
     },
     {
-        image: "/assets/img/cheese.svg",
+        image: cheese,
         right: "right-[45%]",
         bottom: "bottom-[32%]",
         mdRight: "md:right-[50%]",

@@ -1,6 +1,5 @@
 <template>
-    <section class="md:hidden overflow-hidden relative w-full h-screen justify-center bg-[url('/src/assets/img/bunting.svg')] bg-no-repeat bg-[top_18%_center]">
-        <div class="flex h-screen">
+    <div class="flex h-screen">
             <div class="absolute right-[-34%] top-[-10%]">
                 <img src="../assets/img/plant-pointy.svg" class="w-[280px] h-[207px] animate-swaying8" alt="" />
             </div>
@@ -42,82 +41,8 @@
 
             </div>
         </div>
-
-
-    </section>
-
-    <Popovers  />
-
 </template>
 <script setup>
-import { onMounted } from "vue";
-import tippy, {roundArrow, sticky} from "tippy.js";
-import Popovers from "../components/Popovers.vue";
 import Nav from "../components/Nav.vue";
 import Copyright from "../components/Copyright.vue";
-
-onMounted(() => {
-    tippy('#popover-code-bottom', {
-        content(reference) {
-            const id = reference.getAttribute('data-template');
-            const template = document.getElementById(id);
-            return template.innerHTML;
-        },
-        allowHTML: true,
-        animation: 'perspective',
-        trigger: 'click',
-        placement: 'bottom',
-        theme: 'basket',
-        arrow: roundArrow,
-        interactive: true
-    });
-
-    tippy('#popover-cv-bottom', {
-        content(reference) {
-            const id = reference.getAttribute('data-template');
-            const template = document.getElementById(id);
-            return template.innerHTML;
-        },
-        allowHTML: true,
-        animation: 'perspective',
-        trigger: 'click',
-        placement: 'bottom',
-        theme: 'berry',
-        arrow: roundArrow,
-        interactive: true
-    });
-
-    tippy('#popover-contact-bottom', {
-        content(reference) {
-            const id = reference.getAttribute('data-template');
-            const template = document.getElementById(id);
-            return template.innerHTML;
-        },
-        allowHTML: true,
-        animation: 'perspective',
-        trigger: 'click',
-        placement: 'bottom',
-        theme: 'night',
-        arrow: roundArrow,
-        interactive: true
-    });
-
-    tippy('#popover-me-left', {
-        content(reference) {
-            const id = reference.getAttribute('data-template');
-            const template = document.getElementById(id);
-            return template.innerHTML;
-        },
-        allowHTML: true,
-        animation: 'perspective',
-        trigger: 'click',
-        placement: 'top',
-        theme: 'berry',
-        sticky: true,
-        plugins: [sticky],
-        arrow: roundArrow,
-        interactive: true
-    });
-
-})
 </script>

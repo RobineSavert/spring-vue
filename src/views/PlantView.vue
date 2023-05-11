@@ -1,6 +1,5 @@
 <template>
-    <Plant
-            v-for="(bgImage, index) in plants"
+    <Plant v-for="(bgImage, index) in plants"
             :key="index"
             :image="bgImage.image"
             :left="bgImage.left"
@@ -19,11 +18,20 @@
 </template>
 <script setup>
 import Plant from "../components/Plant.vue";
+import plantBerry from "/src/assets/img/plant-berry.svg"
+import plantPointyLeafs from "/src/assets/img/plant-pointy-leafs.svg"
+import plantBubbly from "/src/assets/img/plant-bubbly.svg"
+import plantPointy from "/src/assets/img/plant-pointy.svg"
+import plantRound from "/src/assets/img/plant-round.svg"
+import plantLeafs from "/src/assets/img/plant-leafs.svg"
+import plantRoundLeafs from "/src/assets/img/plant-round-leafs.svg"
+import plantPointyLeafsUp from "/src/assets/img/plant-pointy-leafs-up.svg"
+import plantSimpleBerries from "/src/assets/img/plant-simple-berries.svg"
 import {computed} from "vue";
 
 const plants = computed(() => [
     {
-        image: "/assets/img/plant-berry.svg",
+        image: plantBerry,
         left: "left-[15%]",
         top: "top-[-9%]",
         tripleXlTop: "3xl:top-[-10px]",
@@ -33,7 +41,7 @@ const plants = computed(() => [
         animation: "animate-swaying7"
     },
     {
-        image: "/assets/img/plant-pointy-leafs.svg",
+        image: plantPointyLeafs,
         left: "left-[2%]",
         top: "top-[-10%]",
         tripleXlTop: "3xl:top-[-2%]",
@@ -43,7 +51,7 @@ const plants = computed(() => [
         animation: "animate-swaying8"
     },
     {
-        image: "/assets/img/plant-bubbly.svg",
+        image: plantBubbly,
         left: "left-[-2%]",
         top: "top-[-20%]",
         tripleXlTop: "3xl:top-[-3%]",
@@ -52,7 +60,7 @@ const plants = computed(() => [
         animation: "animate-swaying6"
     },
     {
-        image: "/assets/img/plant-pointy.svg",
+        image: plantPointy,
         right: "right-[5%]",
         top: "top-[-10%]",
         tripleXlTop: "3xl:top-[-1%]",
@@ -63,7 +71,7 @@ const plants = computed(() => [
         animation: "animate-swaying8"
     },
     {
-        image: "/assets/img/plant-round.svg",
+        image: plantRound,
         right: "right-[-10%]",
         top: "top-[-10%]",
         tripleXLTop: "3xl:top-[-4%]",
@@ -74,7 +82,7 @@ const plants = computed(() => [
         animation: "animate-swaying6"
     },
     {
-        image: "/assets/img/plant-leafs.svg",
+        image: plantLeafs,
         right: "right-[15%]",
         top: "top-[-10%]",
         tripleXLTop: "3xl:top-[-1%]",
@@ -85,7 +93,7 @@ const plants = computed(() => [
         animation: "animate-swaying7"
     },
     {
-        image: "/assets/img/plant-round-leafs.svg",
+        image: plantRoundLeafs,
         left: "left-[5%]",
         bottom: "bottom-[-10%]",
         tripleXlBottom: "3xl:bottom-0",
@@ -94,7 +102,7 @@ const plants = computed(() => [
         animation: "animate-swaying8"
     },
     {
-        image: "/assets/img/plant-pointy-leafs-up.svg",
+        image: plantPointyLeafsUp,
         left: "left-[5%]",
         bottom: "bottom-[-10%]",
         tripleXlBottom: "3xl:bottom-[-2%]",
@@ -104,7 +112,7 @@ const plants = computed(() => [
         animation: "animate-swaying6"
     },
     {
-        image: "/assets/img/plant-simple-berries.svg",
+        image: plantSimpleBerries,
         left: "left-[-2%]",
         bottom: "bottom-[25%]",
         tripleXlBottom: "3xl:bottom-[10%]",

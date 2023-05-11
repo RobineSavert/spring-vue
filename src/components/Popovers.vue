@@ -1,6 +1,5 @@
 <template>
     <div style="display: none;">
-
         <Popover :id="'popover-code'">
             <template v-slot:body>
                 <a href="https://github.com/RobineSavert" target="_blank" class="flex items-center w-full h-12 px-3 rounded hover:bg-basket hover:text-white">

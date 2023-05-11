@@ -20,10 +20,14 @@
 </template>
 <script setup>
 import Grass from "../components/Grass.vue";
+import grassSpeck from "/src/assets/img/grass-speck.svg"
+import grassSpeck2 from "/src/assets/img/grass-speck-2.svg"
+import grassSpeck3 from "/src/assets/img/grass-speck-3.svg"
 import {computed} from "vue";
+
 const grass = computed(() => [
     {
-        image: "/assets/img/grass-speck.svg",
+        image: grassSpeck,
         top: "top-[50%]",
         left: "left-[8%]",
         width: "w-[50px]",
@@ -31,7 +35,7 @@ const grass = computed(() => [
         lgWidth: "w-[100px]",
     },
     {
-        image: "/assets/img/grass-speck-2.svg",
+        image: grassSpeck2,
         top: "top-[15%]",
         left: "left-[10%]",
         width: "w-[50px]",
@@ -39,7 +43,7 @@ const grass = computed(() => [
         lgWidth: "w-[100px]",
     },
     {
-        image: "/assets/img/grass-speck-3.svg",
+        image: grassSpeck3,
         top: "top-[15%]",
         right: "right-[10%]",
         width: "w-[50px]",
@@ -47,7 +51,7 @@ const grass = computed(() => [
         lgWidth: "w-[100px]",
     },
     {
-        image: "/assets/img/grass-speck-3.svg",
+        image: grassSpeck3,
         top: "top-[15%]",
         left: "left-[25%]",
         width: "w-[50px]",
@@ -55,7 +59,7 @@ const grass = computed(() => [
         lgWidth: "w-[100px]",
     },
     {
-        image: "/assets/img/grass-speck-3.svg",
+        image: grassSpeck3,
         top: "top-[15%]",
         bottom: "bottom-[15%]",
         width: "w-[50px]",
@@ -63,7 +67,7 @@ const grass = computed(() => [
         lgWidth: "w-[100px]",
     },
     {
-        image: "/assets/img/grass-speck-3.svg",
+        image: grassSpeck3,
         top: "top-[35%]",
         left: "left-[15%]",
         width: "w-[50px]",
@@ -71,7 +75,7 @@ const grass = computed(() => [
         lgWidth: "w-[100px]",
     },
     {
-        image: "/assets/img/grass-speck-3.svg",
+        image: grassSpeck3,
         top: "top-[15%]",
         bottom: "bottom-[5%]",
         width: "w-[50px]",
@@ -79,7 +83,7 @@ const grass = computed(() => [
         lgWidth: "w-[100px]",
     },
     {
-        image: "/assets/img/grass-speck.svg",
+        image: grassSpeck,
         top: "top-[40%]",
         left: "left-[38%]",
         width: "w-[50px]",
@@ -87,7 +91,7 @@ const grass = computed(() => [
         lgWidth: "w-[100px]",
     },
     {
-        image: "/assets/img/grass-speck-2.svg",
+        image: grassSpeck2,
         top: "bottom-[23%]",
         left: "left-[15%]",
         width: "w-[50px]",
@@ -95,7 +99,7 @@ const grass = computed(() => [
         lgWidth: "w-[100px]",
     },
     {
-        image: "/assets/img/grass-speck-3.svg",
+        image: grassSpeck3,
         bottom: "bottom-[15%]",
         left: "left-[25%]",
         width: "w-[50px]",
