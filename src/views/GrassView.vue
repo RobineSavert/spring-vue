@@ -36,8 +36,8 @@ const grass = computed(() => [
     },
     {
         image: grassSpeck2,
-        top: "top-[15%]",
-        left: "left-[10%]",
+        top: "top-[26%]",
+        left: "left-[6%]",
         width: "w-[50px]",
         lgHeight: "h-[124px]",
         lgWidth: "w-[100px]",
@@ -61,7 +61,7 @@ const grass = computed(() => [
     {
         image: grassSpeck3,
         top: "top-[15%]",
-        bottom: "bottom-[15%]",
+        left: "left-[15%]",
         width: "w-[50px]",
         lgHeight: "h-[88px]",
         lgWidth: "w-[100px]",
@@ -76,8 +76,8 @@ const grass = computed(() => [
     },
     {
         image: grassSpeck3,
-        top: "top-[15%]",
-        bottom: "bottom-[5%]",
+        top: "top-[6%]",
+        left: "left-[40%]",
         width: "w-[50px]",
         lgHeight: "h-[88px]",
         lgWidth: "w-[100px]",

@@ -103,7 +103,7 @@ const plants = computed(() => [
     },
     {
         image: plantPointyLeafsUp,
-        left: "left-[5%]",
+        left: "left-[-2%]",
         bottom: "bottom-[-10%]",
         tripleXlBottom: "3xl:bottom-[-2%]",
         tripleXlLeft: "3xl:left-0",
