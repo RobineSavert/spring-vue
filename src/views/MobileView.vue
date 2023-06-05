@@ -41,8 +41,11 @@
 
             </div>
         </div>
+
+  <PopoverItems />
 </template>
 <script setup>
 import Nav from "../components/Nav.vue";
 import Copyright from "../components/Copyright.vue";
+import PopoverItems from "./PopoverItems.vue";
 </script>
